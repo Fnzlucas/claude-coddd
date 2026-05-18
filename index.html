@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Croquez-moi | Privatisation & Événements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        coral: '#E8826A',
+        'coral-dark': '#c9614a',
+        'coral-light': '#fdf0ed',
+        cream: '#faf8f5',
+        'cream-dark': '#f2ede8',
+        ink: '#2d1f1a',
+        muted: '#9c7b72',
+      },
+      fontFamily: {
+        display: ['Cormorant Garamond', 'serif'],
+        body: ['Jost', 'sans-serif'],
+      },
+    },
+  },
+}
+</script>
+<style>
+* { box-sizing: border-box; }
+body { font-family: 'Jost', sans-serif; }
+.font-display { font-family: 'Cormorant Garamond', serif; }
+.material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; font-family: 'Material Symbols Outlined'; }
+details summary { list-style: none; }
+details summary::-webkit-details-marker { display: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body class="bg-cream text-ink antialiased">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/92 backdrop-blur-xl border-b border-coral/10 shadow-[0_2px_20px_rgba(232,130,106,0.06)]">
+  <div class="flex justify-between items-center h-20 px-8 max-w-screen-xl mx-auto">
+    <img src="assets/logo.png" alt="Croquez-Moi" class="h-14 w-auto object-contain"/>
+    <div class="hidden md:flex gap-10 items-center font-body">
+      <a class="text-muted hover:text-coral transition-colors text-sm tracking-wide font-medium" href="#">Accueil</a>
+      <a class="text-muted hover:text-coral transition-colors text-sm tracking-wide font-medium" href="#occasions">Occasions</a>
+      <a class="text-muted hover:text-coral transition-colors text-sm tracking-wide font-medium" href="#temoignages">Témoignages</a>
+      <a class="text-coral text-sm tracking-wide font-medium border-b border-coral" href="#contact">Privatisation</a>
+    </div>
+    <a class="bg-coral text-white px-7 py-3 rounded-full text-sm font-semibold tracking-wide shadow-lg hover:bg-coral-dark hover:scale-105 transition-all duration-300 font-body" href="#contact">
+      Réserver
+    </a>
+  </div>
+</nav>
+
+<main class="pt-20">
+
+<!-- HERO -->
+<section class="relative h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img class="w-full h-full object-cover object-center" src="assets/hero-chariot.jpg" alt="Chariot Croquez-Moi" style="image-rendering:high-quality"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/10"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+    <div class="max-w-2xl">
+      <span class="inline-block px-5 py-2 rounded-full bg-amber-200/90 text-amber-900 font-body text-xs font-semibold uppercase tracking-[0.2em] mb-8">L'Art de Recevoir</span>
+      <h1 class="font-display text-7xl md:text-8xl font-light text-white leading-[1.05] mb-8 tracking-tight">
+        Faites <em class="text-coral not-italic font-semibold">croquer</em><br/>vos invités
+      </h1>
+      <p class="font-body text-lg text-white/75 leading-relaxed mb-10 max-w-lg font-light">
+        Transformez vos célébrations en une expérience inoubliable avec notre bar à fraises fraîches et <strong class="text-white font-medium">chocolat fondu à la minute</strong>.
+      </p>
+      <a class="inline-flex items-center gap-2 bg-coral text-white px-10 py-4 rounded-full font-body font-medium text-sm tracking-wide shadow-xl hover:bg-coral-dark hover:scale-105 active:scale-95 transition-all" href="#contact">
+        Demander un devis
+        <span class="material-symbols-outlined" style="font-size:18px">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-12 bg-ink">
+  <div class="max-w-5xl mx-auto px-8 grid grid-cols-3 divide-x divide-white/10">
+    <div class="text-center px-8">
+      <div class="font-display text-5xl font-semibold text-white mb-1">200<span class="text-coral">+</span></div>
+      <div class="font-body text-white/40 text-xs uppercase tracking-[0.15em]">Événements réalisés</div>
+    </div>
+    <div class="text-center px-8">
+      <div class="font-display text-5xl font-semibold text-white mb-1">3</div>
+      <div class="font-body text-white/40 text-xs uppercase tracking-[0.15em]">Départements couverts</div>
+    </div>
+    <div class="text-center px-8">
+      <div class="font-display text-5xl font-semibold text-white mb-1">100<span class="text-coral">%</span></div>
+      <div class="font-body text-white/40 text-xs uppercase tracking-[0.15em]">Chocolat à la minute</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-28 px-8 max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div>
+      <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-5 block">Notre histoire</span>
+      <h2 class="font-display text-5xl font-light text-ink mb-6 leading-tight">
+        Plus qu'un dessert —<br/><em class="text-coral">une expérience</em><br/>mémorable.
+      </h2>
+      <p class="font-body text-muted text-base leading-relaxed mb-8 font-light">
+        Croquez-Moi, c'est l'idée simple et gourmande de <strong class="text-ink font-medium">transformer chaque événement en souvenir sucré</strong>. Notre chariot rose, nos fraises fraîches sélectionnées chaque jour et notre chocolat fondu à la minute font sensation partout où nous passons.
+      </p>
+      <div class="grid grid-cols-3 gap-6 pt-8 border-t border-coral/15">
+        <div>
+          <div class="font-display text-4xl font-semibold text-coral">200<sup class="text-base">+</sup></div>
+          <div class="font-body text-xs text-muted uppercase tracking-wider mt-1">Événements</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl font-semibold text-coral">5<sup class="text-base">★</sup></div>
+          <div class="font-body text-xs text-muted uppercase tracking-wider mt-1">Moyenne avis</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl font-semibold text-coral">3</div>
+          <div class="font-body text-xs text-muted uppercase tracking-wider mt-1">Départements</div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img class="w-full object-cover" style="max-height:520px;object-position:center top" src="assets/equipe.jpg" alt="L'équipe Croquez-Moi"/>
+      </div>
+      <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
+        <div class="w-10 h-10 bg-coral-light rounded-full flex items-center justify-center text-xl">🍓</div>
+        <div>
+          <div class="font-body font-semibold text-ink text-xs">Gard · Vaucluse · BdR</div>
+          <div class="font-body text-muted text-xs">Réponse sous 24h</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENTO -->
+<section class="py-28 px-8 max-w-7xl mx-auto" id="occasions">
+  <div class="text-center mb-16">
+    <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-4 block">Où nous trouver</span>
+    <h2 class="font-display text-5xl font-light mb-4">Des moments <em class="text-coral">sur mesure</em></h2>
+    <div class="h-px w-20 bg-coral mx-auto"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+    <div class="md:col-span-8 group relative overflow-hidden rounded-3xl shadow-lg" style="height:480px">
+      <img class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="assets/occasion-mariage.jpg" alt="Mariage"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-10 text-white">
+        <h3 class="font-display text-4xl font-semibold mb-2">Mariages & EVJF</h3>
+        <p class="font-body text-white/80 text-sm max-w-sm font-light">Une touche de fraîcheur et de gourmandise pour sublimer votre plus beau jour.</p>
+      </div>
+    </div>
+    <div class="md:col-span-4 group relative overflow-hidden rounded-3xl shadow-lg" style="height:480px">
+      <img class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" src="assets/occasion-anniversaires.jpg" alt="Anniversaires"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 p-8 text-white">
+        <h3 class="font-display text-3xl font-semibold mb-2">Anniversaires</h3>
+        <p class="font-body text-white/75 text-xs font-light">Pour petits et grands, une animation ludique et savoureuse.</p>
+      </div>
+    </div>
+    <div class="md:col-span-12 group relative overflow-hidden rounded-3xl shadow-lg" style="height:380px">
+      <img class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-1000" src="assets/occasion-festivals.jpg" alt="Festivals"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/35 to-transparent"></div>
+      <div class="absolute inset-y-0 left-0 p-12 flex flex-col justify-center max-w-lg text-white">
+        <h3 class="font-display text-4xl font-semibold mb-3">Festivals & Événements</h3>
+        <p class="font-body text-white/80 text-sm font-light">American Bike, food trucks, marchés gourmands — notre chariot rose fait sensation partout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUIT -->
+<section class="py-28 px-8 bg-cream-dark">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="col-span-2 rounded-3xl overflow-hidden shadow-lg" style="height:280px">
+        <img class="w-full h-full object-cover" src="assets/produit-fraises-chocolat.jpg" alt="Fraises au chocolat"/>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg" style="height:200px">
+        <img class="w-full h-full object-cover" src="assets/produit-fraise-box.jpg" alt="Fraise en box"/>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg" style="height:200px">
+        <img class="w-full h-full object-cover" src="assets/produit-cup.jpg" alt="Cup Croquez-Moi"/>
+      </div>
+    </div>
+    <div>
+      <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-5 block">Le produit</span>
+      <h2 class="font-display text-5xl font-light text-ink mb-6 leading-tight">
+        Fraises en cup<br/><em class="text-coral">& chocolat fondu</em>
+      </h2>
+      <p class="font-body text-muted text-base leading-relaxed mb-8 font-light">
+        Des fraises <strong class="text-ink font-medium">fraîches et généreuses</strong> présentées en cup individuelle, nappées à la commande de chocolat fondu crémeux. Simple, beau, irrésistible.
+      </p>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-center gap-3 font-body text-muted text-sm font-light"><span class="w-4 h-px bg-coral flex-shrink-0 inline-block"></span>Fraises fraîches sélectionnées chaque jour</li>
+        <li class="flex items-center gap-3 font-body text-muted text-sm font-light"><span class="w-4 h-px bg-coral flex-shrink-0 inline-block"></span>Chocolat fondu préparé sur place, à la minute</li>
+        <li class="flex items-center gap-3 font-body text-muted text-sm font-light"><span class="w-4 h-px bg-coral flex-shrink-0 inline-block"></span>Présentation soignée en cup individuelle</li>
+        <li class="flex items-center gap-3 font-body text-muted text-sm font-light"><span class="w-4 h-px bg-coral flex-shrink-0 inline-block"></span>Prêt en quelques secondes seulement</li>
+        <li class="flex items-center gap-3 font-body text-muted text-sm font-light"><span class="w-4 h-px bg-coral flex-shrink-0 inline-block"></span>Idéal pour tous les types d'événements</li>
+      </ul>
+      <div class="flex flex-wrap gap-2">
+        <span class="font-body px-4 py-1.5 border border-coral/25 rounded-full text-xs text-muted hover:border-coral hover:text-coral transition-colors">Instagrammable</span>
+        <span class="font-body px-4 py-1.5 border border-coral/25 rounded-full text-xs text-muted hover:border-coral hover:text-coral transition-colors">Fait devant vous</span>
+        <span class="font-body px-4 py-1.5 border border-coral/25 rounded-full text-xs text-muted hover:border-coral hover:text-coral transition-colors">Fraises fraîches</span>
+        <span class="font-body px-4 py-1.5 border border-coral/25 rounded-full text-xs text-muted hover:border-coral hover:text-coral transition-colors">Sans attente</span>
+        <span class="font-body px-4 py-1.5 border border-coral/25 rounded-full text-xs text-muted hover:border-coral hover:text-coral transition-colors">Pour tous les âges</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section class="py-24 px-8 bg-ink">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-4 block">Zone d'intervention</span>
+      <h2 class="font-display text-4xl font-light text-white">Nous intervenons <em class="text-coral">dans le Sud</em></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="border border-white/8 rounded-3xl p-8 hover:border-coral/30 transition-colors">
+        <div class="font-display text-6xl font-semibold text-coral mb-4">30</div>
+        <div class="font-body font-semibold text-white text-lg mb-1">Gard</div>
+        <div class="font-body text-white/25 text-xs uppercase tracking-widest mb-4">Département 30</div>
+        <div class="font-body text-white/45 text-sm leading-relaxed font-light">Nîmes · Beaucaire · Uzès<br/>Alès · Le Grau-du-Roi · Sommières</div>
+      </div>
+      <div class="border border-white/8 rounded-3xl p-8 hover:border-coral/30 transition-colors">
+        <div class="font-display text-6xl font-semibold text-coral mb-4">84</div>
+        <div class="font-body font-semibold text-white text-lg mb-1">Vaucluse</div>
+        <div class="font-body text-white/25 text-xs uppercase tracking-widest mb-4">Département 84</div>
+        <div class="font-body text-white/45 text-sm leading-relaxed font-light">Avignon · Carpentras · Apt<br/>Orange · L'Isle-sur-la-Sorgue · Cavaillon</div>
+      </div>
+      <div class="border border-white/8 rounded-3xl p-8 hover:border-coral/30 transition-colors">
+        <div class="font-display text-6xl font-semibold text-coral mb-4">13</div>
+        <div class="font-body font-semibold text-white text-lg mb-1">Bouches-du-Rhône</div>
+        <div class="font-body text-white/25 text-xs uppercase tracking-widest mb-4">Département 13</div>
+        <div class="font-body text-white/45 text-sm leading-relaxed font-light">Arles · Salon-de-Provence<br/>Aix-en-Provence · Istres · Martigues</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="py-28 px-8 max-w-7xl mx-auto" id="agenda">
+  <div class="mb-14">
+    <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-4 block">Agenda 2025</span>
+    <h2 class="font-display text-5xl font-light">Prochains <em class="text-coral">rendez-vous</em></h2>
+  </div>
+  <div class="divide-y divide-coral/10">
+    <div class="flex items-center justify-between py-5 hover:pl-3 transition-all duration-200">
+      <div class="font-display text-coral text-xl font-medium w-28 flex-shrink-0">14 juin</div>
+      <div class="flex-1"><div class="font-body font-semibold text-ink">American Bike de Beaucaire</div><div class="font-body text-xs text-muted mt-1">Beaucaire — Gard (30)</div></div>
+      <span class="hidden sm:block font-body text-xs uppercase tracking-widest border border-coral/20 text-muted px-4 py-1.5 rounded-full">Grand événement</span>
+    </div>
+    <div class="flex items-center justify-between py-5 hover:pl-3 transition-all duration-200">
+      <div class="font-display text-coral text-xl font-medium w-28 flex-shrink-0">21 juin</div>
+      <div class="flex-1"><div class="font-body font-semibold text-ink">Soirée Food Truck</div><div class="font-body text-xs text-muted mt-1">Avignon — Vaucluse (84)</div></div>
+      <span class="hidden sm:block font-body text-xs uppercase tracking-widest border border-coral/20 text-muted px-4 py-1.5 rounded-full">Food Truck</span>
+    </div>
+    <div class="flex items-center justify-between py-5 hover:pl-3 transition-all duration-200">
+      <div class="font-display text-coral text-xl font-medium w-28 flex-shrink-0">5 juillet</div>
+      <div class="flex-1"><div class="font-body font-semibold text-ink">Marché Nocturne Gourmand</div><div class="font-body text-xs text-muted mt-1">Nîmes — Gard (30)</div></div>
+      <span class="hidden sm:block font-body text-xs uppercase tracking-widest border border-coral/20 text-muted px-4 py-1.5 rounded-full">Marché</span>
+    </div>
+    <div class="flex items-center justify-between py-5 hover:pl-3 transition-all duration-200">
+      <div class="font-display text-coral text-xl font-medium w-28 flex-shrink-0">12 juillet</div>
+      <div class="flex-1"><div class="font-body font-semibold text-ink">Festival Estival</div><div class="font-body text-xs text-muted mt-1">Arles — Bouches-du-Rhône (13)</div></div>
+      <span class="hidden sm:block font-body text-xs uppercase tracking-widest border border-coral/20 text-muted px-4 py-1.5 rounded-full">Festival</span>
+    </div>
+    <div class="flex items-center justify-between py-5 hover:pl-3 transition-all duration-200">
+      <div class="font-display text-coral text-xl font-medium w-28 flex-shrink-0">19 juillet</div>
+      <div class="flex-1"><div class="font-body font-semibold text-ink">Night Market</div><div class="font-body text-xs text-muted mt-1">Aix-en-Provence — BdR (13)</div></div>
+      <span class="hidden sm:block font-body text-xs uppercase tracking-widest border border-coral/20 text-muted px-4 py-1.5 rounded-full">Night Market</span>
+    </div>
+  </div>
+  <p class="mt-8 font-body text-muted text-sm font-light">Agenda complet sur <a class="text-coral hover:underline font-medium" href="#">Instagram</a> — abonnez-vous pour ne rien manquer.</p>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="bg-cream-dark py-28 overflow-hidden" id="temoignages">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-14">
+      <span class="font-body text-xs font-semibold uppercase tracking-[0.2em] text-coral mb-4 block">Ce qu'ils disent</span>
+      <h2 class="font-display text-5xl font-light mb-3">Ils nous ont fait <em class="text-coral">confiance</em></h2>
+      <p class="font-body text-muted text-sm font-light">Découvrez les souvenirs de nos dernières prestations.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-5 mb-10">
+      <div class="rounded-3xl overflow-hidden shadow-lg" style="height:320px">
+        <img class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="assets/galerie-mariage.jpg" alt="Mariage"/>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg" style="height:320px">
+        <img class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="assets/galerie-enfants.jpg" alt="Enfants"/>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="bg-white p-7 rounded-3xl shadow-sm">
+        <div class="text-amber-400 mb-4 text-base">★★★★★</div>
+        <p class="font-display text-lg italic text-muted mb-6 leading-relaxed">"Les fraises au chocolat étaient la star de notre gender reveal. Présentation magnifique, goût exceptionnel !"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-coral-light flex items-center justify-center text-coral font-display font-semibold">M</div>
+          <div><div class="font-body font-semibold text-xs text-ink">Marie L.</div><div class="font-body text-xs text-muted uppercase tracking-wider">Nîmes — Gard</div></div>
+        </div>
+      </div>
+      <div class="bg-white p-7 rounded-3xl shadow-sm">
+        <div class="text-amber-400 mb-4 text-base">★★★★★</div>
+        <p class="font-display text-lg italic text-muted mb-6 leading-relaxed">"Le chocolat fondu à la minute, c'est une autre dimension. On les suit partout depuis Beaucaire !"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-coral-light flex items-center justify-center text-coral font-display font-semibold">J</div>
+          <div><div class="font-body font-semibold text-xs text-ink">Julien B.</div><div class="font-body text-xs text-muted uppercase tracking-wider">Avignon — Vaucluse</div></div>
+        </div>
+      </div>
+      <div class="bg-white p-7 rounded-3xl shadow-sm">
+        <div class="text-amber-400 mb-4 text-base">★★★★★</div>
+        <p class="font-display text-lg italic text-muted mb-6 leading-relaxed">"Présents à notre mariage. Le dessert dont tout le monde a encore parlé le lendemain !"</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-coral-light flex items-center justify-center text-coral font-display font-semibold">S</div>
+          <div><div class="font-body font-semibold text-xs text-ink">Sophie A.</div><div class="font-body text-xs text-muted uppercase tracking-wider">Arles — BdR</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-28 px-8 max-w-4xl mx-auto">
+  <div class="text-center mb-14">
+    <h2 class="font-display text-5xl font-light mb-3">Questions <em class="text-coral">Fréquentes</em></h2>
+    <p class="font-body text-muted text-sm font-light">Tout ce que vous devez savoir pour l'organisation de votre événement.</p>
+  </div>
+  <div class="space-y-3">
+    <details class="group bg-cream-dark rounded-2xl overflow-hidden border border-coral/12">
+      <summary class="flex justify-between items-center p-6 cursor-pointer">
+        <span class="font-body font-semibold text-ink">Quel est le délai de réservation conseillé ?</span>
+        <span class="material-symbols-outlined group-open:rotate-180 transition-transform text-coral" style="font-size:20px">expand_more</span>
+      </summary>
+      <div class="px-6 pb-6 font-body text-muted text-sm leading-relaxed font-light">Nous recommandons de réserver au moins 2 à 3 mois à l'avance pour les mariages. Pour les entreprises, 3 semaines suffisent généralement.</div>
+    </details>
+    <details class="group bg-cream-dark rounded-2xl overflow-hidden border border-coral/12">
+      <summary class="flex justify-between items-center p-6 cursor-pointer">
+        <span class="font-body font-semibold text-ink">Y a-t-il un nombre minimum d'invités ?</span>
+        <span class="material-symbols-outlined group-open:rotate-180 transition-transform text-coral" style="font-size:20px">expand_more</span>
+      </summary>
+      <div class="px-6 pb-6 font-body text-muted text-sm leading-relaxed font-light">Nos prestations commencent à partir de 50 personnes. Pour des groupes plus petits, contactez-nous.</div>
+    </details>
+    <details class="group bg-cream-dark rounded-2xl overflow-hidden border border-coral/12">
+      <summary class="flex justify-between items-center p-6 cursor-pointer">
+        <span class="font-body font-semibold text-ink">De quel espace avez-vous besoin ?</span>
+        <span class="material-symbols-outlined group-open:rotate-180 transition-transform text-coral" style="font-size:20px">expand_more</span>
+      </summary>
+      <div class="px-6 pb-6 font-body text-muted text-sm leading-relaxed font-light">Notre bar artisanal nécessite un espace plat d'environ 3m x 2m avec accès à une prise 220V.</div>
+    </details>
+    <details class="group bg-cream-dark rounded-2xl overflow-hidden border border-coral/12">
+      <summary class="flex justify-between items-center p-6 cursor-pointer">
+        <span class="font-body font-semibold text-ink">Options pour régimes spécifiques ?</span>
+        <span class="material-symbols-outlined group-open:rotate-180 transition-transform text-coral" style="font-size:20px">expand_more</span>
+      </summary>
+      <div class="px-6 pb-6 font-body text-muted text-sm leading-relaxed font-light">Nos fruits sont naturellement sans gluten et vegan. Chocolat noir vegan et sans lactose disponible sur demande.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-28 px-8 max-w-7xl mx-auto" id="contact">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div class="space-y-7">
+      <h2 class="font-display text-6xl font-light text-ink leading-tight">Prêt à faire <em class="text-coral">fondre</em> vos invités ?</h2>
+      <p class="font-body text-muted text-base leading-relaxed font-light">Remplissez ce formulaire pour recevoir un devis personnalisé sous 24h. Chaque événement est unique, notre proposition le sera aussi.</p>
+      <div class="space-y-5 pt-2">
+        <div class="flex items-center gap-5 group">
+          <div class="w-12 h-12 rounded-full bg-coral-light flex items-center justify-center text-coral group-hover:bg-coral group-hover:text-white transition-all duration-300">
+            <span class="material-symbols-outlined" style="font-size:20px">mail</span>
+          </div>
+          <div>
+            <p class="font-body text-xs text-muted uppercase tracking-widest">Email</p>
+            <p class="font-body font-semibold text-ink">contact@croquez-moi.fr</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 group">
+          <div class="w-12 h-12 rounded-full bg-coral-light flex items-center justify-center text-coral group-hover:bg-coral group-hover:text-white transition-all duration-300">
+            <span class="material-symbols-outlined" style="font-size:20px">call</span>
+          </div>
+          <div>
+            <p class="font-body text-xs text-muted uppercase tracking-widest">Téléphone</p>
+            <p class="font-body font-semibold text-ink">06 XX XX XX XX</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg" style="height:220px">
+        <img class="w-full h-full object-cover" src="assets/galerie-chariot.jpg" alt="Chariot Croquez-Moi"/>
+      </div>
+    </div>
+    <div class="bg-cream-dark p-10 rounded-3xl shadow-xl">
+      <form class="space-y-5">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="font-body text-xs font-semibold text-muted uppercase tracking-wider block mb-2">Nom Complet</label>
+            <input class="w-full bg-white rounded-xl p-4 border border-coral/15 focus:border-coral focus:ring-2 focus:ring-coral/10 text-ink placeholder:text-muted/40 outline-none font-body text-sm" placeholder="Jean Dupont" type="text"/>
+          </div>
+          <div>
+            <label class="font-body text-xs font-semibold text-muted uppercase tracking-wider block mb-2">Email</label>
+            <input class="w-full bg-white rounded-xl p-4 border border-coral/15 focus:border-coral focus:ring-2 focus:ring-coral/10 text-ink placeholder:text-muted/40 outline-none font-body text-sm" placeholder="jean@exemple.com" type="email"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="font-body text-xs font-semibold text-muted uppercase tracking-wider block mb-2">Date</label>
+            <input class="w-full bg-white rounded-xl p-4 border border-coral/15 focus:border-coral focus:ring-2 focus:ring-coral/10 text-ink outline-none font-body text-sm" type="date"/>
+          </div>
+          <div>
+            <label class="font-body text-xs font-semibold text-muted uppercase tracking-wider block mb-2">Invités</label>
+            <input class="w-full bg-white rounded-xl p-4 border border-coral/15 focus:border-coral focus:ring-2 focus:ring-coral/10 text-ink placeholder:text-muted/40 outline-none font-body text-sm" placeholder="Ex: 150" type="number"/>
+          </div>
+        </div>
+        <div>
+          <label class="font-body text-xs font-semibold text-muted uppercase tracking-wider block mb-2">Votre projet</label>
+          <textarea class="w-full bg-white rounded-xl p-4 border border-coral/15 focus:border-coral focus:ring-2 focus:ring-coral/10 text-ink placeholder:text-muted/40 outline-none font-body text-sm resize-none" placeholder="Dites-nous en plus sur vos envies..." rows="4"></textarea>
+        </div>
+        <button class="w-full bg-coral text-white py-4 rounded-full font-body font-semibold text-sm tracking-wide shadow-lg hover:bg-coral-dark hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
+          Envoyer la demande
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="py-14 px-8 bg-cream-dark border-t border-coral/10">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto items-start">
+    <div>
+      <img src="assets/logo.png" alt="Croquez-Moi" class="h-14 w-auto object-contain mb-4"/>
+      <p class="font-body text-sm text-muted max-w-xs leading-relaxed font-light">Artisans passionnés du fruit et du chocolat, nous apportons une touche d'élégance à tous vos moments de vie.</p>
+    </div>
+    <div>
+      <h4 class="font-body font-semibold text-ink uppercase tracking-widest text-xs mb-5">Navigation</h4>
+      <nav class="flex flex-col space-y-3">
+        <a class="font-body text-sm text-muted hover:text-coral transition-colors font-light" href="#">Instagram</a>
+        <a class="font-body text-sm text-muted hover:text-coral transition-colors font-light" href="#">Facebook</a>
+        <a class="font-body text-sm text-muted hover:text-coral transition-colors font-light" href="#contact">Contact</a>
+        <a class="font-body text-sm text-muted hover:text-coral transition-colors font-light" href="#">Mentions Légales</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="font-body font-semibold text-ink uppercase tracking-widest text-xs mb-5">Contact</h4>
+      <p class="font-body text-sm text-muted leading-relaxed font-light">
+        Gard · Vaucluse · Bouches-du-Rhône<br/>
+        contact@croquez-moi.fr<br/><br/>
+        © 2025 Croquez-moi. Artisans du Fruit & Chocolat.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle('shadow-md', scrollY > 60);
+});
+</script>
+</body>
+</html>
